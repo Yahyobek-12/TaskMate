@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Rubik+Glitch+Pop&display=swap');
+
+.auth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background: url(../Images/bg-1.jpg);
+}
+
+.logo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    align-items: center;
+    background: #121212;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Rubik Glitch Pop", system-ui;
+}
+
+.auth-card {
+    width: 400px;
+    height: 180px;
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: #121212;
+}
+
+.auth-card h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.google-btn {
+    width: 90%;
+    bottom: 20px;
+    height: 50px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 2rem;
+    position: absolute;
+    border-radius: 5px;
+    align-items: center;
+    border: 2px solid #f1f2f3;
+    justify-content: space-evenly;
+}
+
+.google-icon {
+    font-size: 30px;
+}
+
+.google-btn:hover {
+    color: #121212;
+    transition: 0.5s;
+    background: #fff;
+}
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 340px) {
+    .auth-card h1 {
+        font-size: 26px;
+    }
+}
