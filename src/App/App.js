@@ -1,5 +1,4 @@
 import 'animate.css';
-import Auth from "../Auth/Auth";
 import Add from "../Components/Add";
 import Home from "../Components/Home";
 import { Routes, Route } from "react-router-dom";
@@ -7,9 +6,9 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div className="app">
+    <p></p>
       <Routes>
-        <Route path="" element={<Auth />} />
-        <Route path="Home" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="Add" element={<Add />} />
       </Routes>
     </div>
