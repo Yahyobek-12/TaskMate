@@ -7,22 +7,25 @@ import 'react-toastify/dist/ReactToastify.css';
 import { IoReaderOutline  } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 
-// ... (other imports)
 
 const AllTask = ({ todos, onDelete }) => {
   const [read, setRead] = useState(false);
-  const copied = () => toast('Copied To Clipboard');
 
   const toggleRead = () => {
     setRead(!read);
   };
 
-  // Add null checks to prevent 'undefined' errors
+  const copied = () => {
+    toast.dark('2 Items Copied To Clipboard');
+    const copy = require('clipboard-copy');
+    copy(`Title: ${todos.title} && Description: ${todos.description}`)
+  };
+
   const formattedDate = todos?.date
     ? `${todos.date.day}/${todos.date.month}/${todos.date.year}`
     : 'N/A';
 
-  return (
+    return (
     <div className="all-task">
       <div className="task-cards">
         <div className="task-card animate__animated animate__fadeInUp">
