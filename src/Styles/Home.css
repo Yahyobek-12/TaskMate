@@ -10,9 +10,9 @@
     padding: 10px 5px;
     position: absolute;
     align-items: center;
-    background: #0003;
+    background: #0006;
     backdrop-filter: blur(20px);
-    position: fixed; z-index: 1;
+    position: fixed; z-index: 12;
     justify-content: space-between;
     border-bottom: 1px solid #555;
 }   

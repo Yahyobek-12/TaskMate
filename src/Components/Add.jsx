@@ -1,18 +1,19 @@
 import '../Styles/Add.css';
 import Navbar from "./Navbar";
-import { Tooltip } from '@mui/material';
 import { TaskContext } from '../Provider';
 import addLogo from '../Images/add-logs.webp';
 import { useContext, useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import bookLogo from '../Images/todo-logos.png';
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const Add = () => {
   const [tasks, setTasks] = useState({ title: '', description: '' });
   const added = () => toast.success('⚡️ Created Successfully');
   const notWrite = () => toast.error('✍️ Please Write...');
   const { addTask } = useContext(TaskContext);
+  const navigate = useNavigate();
 
   const changehandler = (e) => {
     setTasks({ ...tasks, [e.target.name]: e.target.value });
@@ -29,6 +30,14 @@ const Add = () => {
     const data = { title: tasks.title, description: tasks.description };
     addTask(data);
     added();
+
+    setTimeout(() => {
+      toast('Go Back Home Page');
+    }, 150);
+
+    setTimeout(() => {
+      navigate('/');
+    }, 6000);
 
     setTasks({ title: '', description: '' });
   };

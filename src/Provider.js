@@ -8,7 +8,15 @@ const Provider = ({ children }) => {
   const [tasks, setTasks] = useState(initialTasks);
 
   const addTask = (item) => {
-    const newItem = { title: item.title, description: item.description };
+    const newItem = {
+      title: item.title,
+      description: item.description,
+      date: {
+        day: new Date().getDate(),
+        month: new Date().getMonth() + 1,
+        year: new Date().getFullYear(),
+      },
+    };
     const newTasks = [...tasks, newItem];
     setTasks(newTasks);
   };

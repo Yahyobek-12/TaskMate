@@ -25,7 +25,7 @@ const Home = () => {
                         ))}
                     </>
                 ) : (
-                    <div className="no-data">
+                    <div className="no-data animate__animated animate__zoomInDown">
                         <img src={noData} alt="no-data" />
                     </div>
                 )}
