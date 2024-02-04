@@ -20,7 +20,7 @@ const TopBar = () => {
 
   return (
     <div className="top-bar  animate__animated animate__fadeInDown">
-      <h2 className="top-logo">ToDo <span>Forge</span></h2>
+      <h2 className="top-logo">Task <span>Mate</span></h2>
         <h3 className="calendar">{currentData}</h3>
     </div>
   )

@@ -5,7 +5,6 @@ import { TaskContext } from "../Provider";
 import { NavLink } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai";
 import { MdLibraryAdd } from "react-icons/md";
-import { IoLogOutSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineClear } from "react-icons/ai";
 
