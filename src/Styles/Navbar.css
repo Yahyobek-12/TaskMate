@@ -30,7 +30,6 @@
     justify-content: center;
 }
 
-
 .navbar a.active {
     border-radius: 50px;
     background: #2B373D;
@@ -52,6 +51,20 @@
 .btn-logout .btn-icon {
     color: #fff;
     font-size: 25px;
+}
+
+/* NAVLINK ANIMATIONS */
+
+.animate__animated.animate__zoomInDown:nth-child(1) {
+    --animate-duration: .5s;
+}
+
+.animate__animated.animate__zoomInDown:nth-child(3) {
+    --animate-duration: 1s;
+}
+
+.animate__animated.animate__zoomInDown:nth-child(3) {
+    --animate-duration: 1.5s;
 }
 
 /* MEDIA SCREEN */

@@ -18,7 +18,7 @@ const AllTask = ({ todos, onDelete }) => {
   const copied = () => {
     toast.dark('2 Items Copied To Clipboard');
     const copy = require('clipboard-copy');
-    copy(`Title: ${todos.title} && Description: ${todos.description}`)
+    copy(`⚡️ ${todos.title} && 📔 ${todos.description}`)
   };
 
   const formattedDate = todos?.date

@@ -30,7 +30,6 @@ const Home = () => {
                     </div>
                 )}
             </div>
-            <Navbar />
         </div>
     );
 }

@@ -20,11 +20,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className='nav animate__animated animate__fadeInUp'>
+    <div className='nav'>
       <ul className="navbar">
-        <Tooltip title='Home Page'><NavLink to='/'><AiFillHome className='link-icon' /></NavLink></Tooltip>
-        <Tooltip title='Add Task'><NavLink to='/Add'><MdLibraryAdd className='link-icon' /></NavLink></Tooltip>
-        <Tooltip title='Clear All'><button className="btn-logout" onClick={logOut}><AiOutlineClear className='btn-icon' /></button></Tooltip>
+        <Tooltip className='animate__animated animate__zoomInDown' title='Home Page'><NavLink to='/'><AiFillHome className='link-icon' /></NavLink></Tooltip>
+        <Tooltip className='animate__animated animate__zoomInDown' title='Add Task'><NavLink to='/Add'><MdLibraryAdd className='link-icon' /></NavLink></Tooltip>
+        <Tooltip className='animate__animated animate__zoomInDown' title='Clear All'><button className="btn-logout" onClick={logOut}><AiOutlineClear className='btn-icon' /></button></Tooltip>
       </ul>
     </div>
   )

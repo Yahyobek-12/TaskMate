@@ -44,13 +44,13 @@ const Add = () => {
 
   return (
     <div className='add'>
+      <footer>&copy; From NWT</footer>
       <img className='logo-img animate__animated animate__bounceIn' src={bookLogo} alt="logo" />
       <form className="form  animate__animated animate__fadeInDown" onSubmit={addTaskHandler}>
         <input type="text" className="title" placeholder='Write Title...' name='title' value={tasks.title} onChange={changehandler} />
         <input type="text" className="description" placeholder='Write Description...' name='description' value={tasks.description} onChange={changehandler} />
-        <button type='submit'><img src={addLogo} alt="add-logo" className='add-btn' /></button>
+        <button type='submit' className='add-btn'><img src={addLogo} alt="add-logo" /></button>
       </form>
-      <Navbar />
       <ToastContainer />
     </div>
   );
