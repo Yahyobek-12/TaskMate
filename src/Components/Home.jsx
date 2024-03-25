@@ -18,12 +18,12 @@ const Home = () => {
             <TopBar />
             <div className="all-tasks">
                 {tasks.length > 0 ? (
-                    <>
+                    <div className="wrap">
                         <h3 className='count animate__animated animate__fadeInLeft'>All Task: <span>{tasks.length}</span></h3>
                         {tasks.map((todo, index) => (
                             <AllTask key={uuidv4()} todos={todo} onDelete={() => handleDelete(index)} />
                         ))}
-                    </>
+                    </div>
                 ) : (
                     <div className="no-data animate__animated animate__zoomInDown">
                         <img src={noData} alt="no-data" />
