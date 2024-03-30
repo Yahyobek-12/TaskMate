@@ -34,9 +34,9 @@ const Add = () => {
       toast('Go Back Home Page');
     }, 150);
 
-    setTimeout(() => {
-      navigate('/');
-    }, 6000);
+    // setTimeout(() => {
+    //   navigate('/');
+    // }, 6000);
 
     setTasks({ title: '', description: '' });
   };

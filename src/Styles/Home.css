@@ -52,6 +52,10 @@
     margin-left: 1.3rem;
 }
 
+.all-tasks {
+    padding-bottom: 5rem;
+}
+
 .all-task {
     width: 300px;
     color: #fff;
