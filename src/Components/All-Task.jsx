@@ -1,9 +1,11 @@
 import '../Styles/Home.css';
 import { useState } from 'react';
+import bookImage from '../Images/book.gif';
 import { FaTrashAlt } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { MdContentCopy } from "react-icons/md";
 import 'react-toastify/dist/ReactToastify.css';
+import thunderImage from '../Images/thunder.gif';
 import { IoReaderOutline  } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -29,14 +31,14 @@ const AllTask = ({ todos, onDelete }) => {
     <div className="all-task">
       <div className="task-cards">
         <div className="task-card animate__animated animate__fadeInUp">
-          <h3>⚡️ {todos?.title?.slice(0, 10)}</h3>
-          <p className="description">📔 {todos?.description?.slice(0, 25)}</p>
+          <h3><img className='thunder-title' src={thunderImage} alt="thunder-title" /> {todos?.title?.slice(0, 10)}</h3>
+          <p className="description"><img className='book-description' src={bookImage} alt="thunder-title" /> {todos.description.slice(0, 100)}</p>
           <span>📆 {formattedDate}</span>
           <IoReaderOutline className='read' onClick={toggleRead} />
         </div>
         {read && (
           <div className="read-card">
-            <h2>⚡️ {todos?.title}</h2>
+            <h2><img className='thunder-title' src={thunderImage} alt="thunder-title" /> {todos?.title}</h2>
             <p>
               <p>{todos?.description}</p>
             </p>
