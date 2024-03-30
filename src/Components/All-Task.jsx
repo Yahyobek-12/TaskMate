@@ -32,7 +32,7 @@ const AllTask = ({ todos, onDelete }) => {
       <div className="task-cards">
         <div className="task-card animate__animated animate__fadeInUp">
           <h3><img className='thunder-title' src={thunderImage} alt="thunder-title" /> {todos?.title?.slice(0, 10)}</h3>
-          <p className="description"><img className='book-description' src={bookImage} alt="thunder-title" /> {todos.description.slice(0, 100)}</p>
+          <p className="description">{todos.description.slice(0, 100)}</p>
           <span>📆 {formattedDate}</span>
           <IoReaderOutline className='read' onClick={toggleRead} />
         </div>
