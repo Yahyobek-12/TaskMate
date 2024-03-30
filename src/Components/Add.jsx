@@ -1,10 +1,9 @@
 import '../Styles/Add.css';
-import Navbar from "./Navbar";
 import { TaskContext } from '../Provider';
 import addLogo from '../Images/add-logs.webp';
 import { useContext, useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
-import bookLogo from '../Images/todo-logos.png';
+import bookLogo from '../Images/write.gif';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 

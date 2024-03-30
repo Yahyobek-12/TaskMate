@@ -44,12 +44,11 @@
     font-family: "Lilita One", sans-serif;
 }
 
-.all-tasks {
-    margin-top: 7rem;
-}
-
-.all-tasks .count {
+.counter {
     color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 6rem;
     margin-left: 1.3rem;
 }
 

@@ -15,6 +15,7 @@ const Home = () => {
     return (
         <div>
             <TopBar />
+            <h3 className="counter">Your Tasks: {tasks.length}</h3>
             <div className="all-tasks">
                 {tasks.length > 0 ? (
                     <div className="wrap">
