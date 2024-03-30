@@ -63,6 +63,7 @@
 }
 
 .task-cards {
+    width: 285px;
     margin-top: -1rem;
 }
 
@@ -202,7 +203,7 @@
     }
 
     .wrap {
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
         justify-content: center;
     }
 
