@@ -53,6 +53,7 @@
 }
 
 .all-tasks {
+    width: 100%;
     padding-bottom: 5rem;
 }
 
@@ -185,6 +186,16 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .all-task {
+        width: 100%;
+    }
+
+    .task-cards {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 505px) {
     .no-data img {
         width: 500px;
@@ -205,10 +216,6 @@
     .wrap {
         padding-bottom: 1rem;
         justify-content: center;
-    }
-
-    .all-task {
-        width: 500px;
     }
 
 }
