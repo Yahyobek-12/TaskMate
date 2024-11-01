@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  position: relative;
   background: linear-gradient(to right, #121212, #212121);
 }
 

@@ -4,8 +4,8 @@ export const TaskContext = createContext();
 
 const Provider = ({ children }) => {
   const initialTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
   const [tasks, setTasks] = useState(initialTasks);
+  const [answer, setAnswer] = useState(false)
 
   const addTask = (item) => {
     const newItem = {
@@ -36,7 +36,7 @@ const Provider = ({ children }) => {
   }, [tasks]);
 
   return (
-    <TaskContext.Provider value={{ tasks, addTask, deleteTask, clearTasks }}>
+    <TaskContext.Provider value={{ tasks, addTask, deleteTask, clearTasks, answer, setAnswer }}>
       {children}
     </TaskContext.Provider>
   );

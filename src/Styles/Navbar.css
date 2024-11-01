@@ -14,7 +14,7 @@
 }
 
 .navbar {
-    width: 20%;
+    width: 8%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -51,6 +51,14 @@
 .btn-logout .btn-icon {
     color: #fff;
     font-size: 25px;
+}
+
+.answer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
 }
 
 /* NAVLINK ANIMATIONS */
